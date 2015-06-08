@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/button_normal</item>
+        <item name="android:layout_marginTop">@dimen/button_margin</item>
+        <item name="android:padding">@dimen/button_padding</item>
+    </style>
+
+</resources>
