@@ -1,6 +1,7 @@
 package com.inspirethis.mike.myappportfolio;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,7 +49,10 @@ public class MainActivity extends Activity {
         projectOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.project_one_message), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), getResources().getString(R.string.project_one_message), Toast.LENGTH_SHORT).show();
+                Intent streamer = new Intent(MainActivity.this, SpotifyStreamerActivity.class);
+                MainActivity.this.startActivity(streamer);
+                finish();
             }
         });
 
