@@ -17,6 +17,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
+//        View decorView = getWindow().getDecorView();
+//// Hide the status bar.
+//        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+//        decorView.setSystemUiVisibility(uiOptions);
+//// Remember that you should never show the action bar if the
+//// status bar is hidden, so hide that too if necessary.
+//        ActionBar actionBar = getActionBar();
+//        actionBar.hide();
+//
         addListenerOnProjectButtons();
 
     }
@@ -24,9 +34,8 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-        return false;
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
     @Override
@@ -52,7 +61,6 @@ public class MainActivity extends Activity {
                 //Toast.makeText(getApplicationContext(), getResources().getString(R.string.project_one_message), Toast.LENGTH_SHORT).show();
                 Intent streamer = new Intent(MainActivity.this, SpotifyStreamerActivity.class);
                 MainActivity.this.startActivity(streamer);
-                finish();
             }
         });
 

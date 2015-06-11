@@ -3,9 +3,6 @@ package com.inspirethis.mike.myappportfolio;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -34,23 +31,23 @@ public class SpotifyStreamerActivityFragment extends Fragment {
         setHasOptionsMenu(true);
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_spotify_streamer, menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-//        if (id == R.id.action_refresh) {
+//    @Override
+//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//        inflater.inflate(R.menu.menu_spotify_streamer, menu);
+//    }
 //
-//            return true;
-//        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+////        if (id == R.id.action_refresh) {
+////
+////            return true;
+////        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
 
     @Override
@@ -75,7 +72,7 @@ public class SpotifyStreamerActivityFragment extends Fragment {
                         R.id.artist, // The ID of the textview to populate.
                         musicList);
 
-        View rootView = inflater.inflate(R.layout.fragment_spotify_streamer, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_artist_search, container, false);
 
         // Get a reference to the ListView, and attach this adapter to it.
         ListView listView = (ListView) rootView.findViewById(R.id.listview_music);
@@ -91,6 +88,6 @@ public class SpotifyStreamerActivityFragment extends Fragment {
 
         return rootView;
     }
-    //return inflater.inflate(R.layout.fragment_spotify_streamer, container, false);
+    //return inflater.inflate(R.layout.fragment_artist_search, container, false);
 
 }

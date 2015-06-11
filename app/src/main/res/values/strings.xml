@@ -17,5 +17,5 @@
     <string name="project_four">BUILD IT BIGGER</string>
     <string name="project_five">XYZ READER</string>
     <string name="project_six">CAPSTONE: MY OWN APP</string>
-    <string name="title_activity_spotify_streamer">SpotifyStreamerActivity</string>
+    <string name="title_activity_spotify_streamer">Spotify Streamer</string>
 </resources>
