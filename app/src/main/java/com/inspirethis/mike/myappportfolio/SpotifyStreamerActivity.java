@@ -16,7 +16,6 @@ public class SpotifyStreamerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spotify_streamer);
-
         View decorView = getWindow().getDecorView();
 // Hide the status bar.
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
