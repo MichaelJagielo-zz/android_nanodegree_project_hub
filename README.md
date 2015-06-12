@@ -1,4 +1,4 @@
-# ud_nd_project_0
+# ud_nd_projects
 
 Project Title:
 Project 0 : My App Portfolio 
