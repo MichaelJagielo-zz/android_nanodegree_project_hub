@@ -17,7 +17,13 @@
     <string name="project_four">BUILD IT BIGGER</string>
     <string name="project_five">XYZ READER</string>
     <string name="project_six">CAPSTONE: MY OWN APP</string>
-    <string name="title_activity_spotify_streamer">Spotify Streamer</string>
+
+
+
+
     <string name="search_artist_hint">Search Artist...</string>
     <string name="search_artist_label">search artist label</string>
+    <string name="no_artists_found">No artists were found</string>
+
+
 </resources>

@@ -2,6 +2,7 @@ package com.inspirethis.mike.myappportfolio;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,8 +49,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), getResources().getString(R.string.project_one_message), Toast.LENGTH_SHORT).show();
-                Intent streamer = new Intent(MainActivity.this, SpotifyStreamerActivity.class);
-                MainActivity.this.startActivity(streamer);
+//                Intent streamer = new Intent(MainActivity.this, SpotifyStreamerActivity.class);
+//                MainActivity.this.startActivity(streamer);
+                PackageManager pm = getApplicationContext().getPackageManager();
+                Intent appStartIntent = pm.getLaunchIntentForPackage("com.inspirethis.mike.spotifystreamer");
+                if (null != appStartIntent)
+                {
+                    getApplicationContext().startActivity(appStartIntent);
+                }
             }
         });
 
